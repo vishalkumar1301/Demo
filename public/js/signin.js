@@ -11,7 +11,7 @@ $(document).ready(function() {
             }
           }).done(function(data) {
             window.localStorage.setItem('x-auth-token', data.user.token)
-            window.location.href = window.location.origin + '/home';
+            window.location.href = window.location.origin + '/';
             $('#submit').removeClass('disabled');
 
           }).fail(function(){
