@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.ajax({
         method: 'GET',
-        url: "http://localhost:8000/home",
+        url: "https://dabbawala-97.herokuapp.com/home",
         headers: {
             "Authorization": 'Bearer ' + localStorage.getItem('x-auth-token'),
         }
