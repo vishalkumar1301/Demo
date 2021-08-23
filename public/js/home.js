@@ -5,6 +5,9 @@ $(document).ready(function() {
         headers: {
             "Authorization": 'Bearer ' + localStorage.getItem('x-auth-token'),
         }
+    }).done( function (data) {
+        console.log('Headers: ', data);
+        $('.headerResult').text('Headers: ' + JSON.stringify(data));
     }).fail(function(data, a){
         window.location.href = window.location.origin + '/signin';
     });
